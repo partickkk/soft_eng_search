@@ -18,7 +18,7 @@
         </h1>
     <?php } unset($_SESSION['message']); ?>
 
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="GET">
+    <form action="<?php echo ($_SERVER['PHP_SELF']); ?>" method="GET">
         <input type="text" name="searchInput" placeholder="Search here">
         <input type="submit" name="searchBtn">
     </form>
